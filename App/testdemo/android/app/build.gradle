@@ -103,7 +103,7 @@ android {
 
     defaultConfig {
         applicationId "com.testdemo"
-        minSdkVersion rootProject.ext.minSdkVersion
+        minSdkVersion 19
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -138,6 +138,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-ble-manager')
     implementation project(':react-native-picker')
     implementation project(':react-native-gesture-handler')
     implementation fileTree(dir: "libs", include: ["*.jar"])

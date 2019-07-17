@@ -9,7 +9,10 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.9",
+    "react-native-alibc-sdk": "git+https://github.com/zzz945/react-native-alibc-sdk.git",
+    "react-native-ble-manager": "^6.6.8",
     "react-native-gesture-handler": "^1.3.0",
+    "react-native-maps": "^0.25.0",
     "react-native-picker": "^4.3.7",
     "react-navigation": "^3.11.0"
   },

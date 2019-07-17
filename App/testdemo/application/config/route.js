@@ -9,12 +9,16 @@ import  Test from '../page/home/Test';
 
 
 import  User from '../page/user/User';
+import  Info from '../page/user/Info';
+
 
 import asset from '../config/asset';
 
 const HomeNav = createStackNavigator({
     Home:{screen:Home},
     Test:{screen:Test},
+    User: {screen:User},
+    Info: {screen:Info},
 }, {
     defaultNavigationOptions: {
         headerTintColor: '#000',
@@ -29,6 +33,9 @@ const HomeNav = createStackNavigator({
 
 const UserNav = createStackNavigator({
     User: {screen:User},
+    Info: {screen:Info},
+    Home:{screen:Home},
+    Test:{screen:Test},
 }, {
     defaultNavigationOptions: {
         headerTintColor: '#000',
@@ -43,6 +50,7 @@ const UserNav = createStackNavigator({
 })
 
 HomeNav.navigationOptions = ({navigation}) => {
+    
     let tabBarVisible = true;
 
     if (navigation.state.index > 0) {
