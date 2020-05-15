@@ -3,6 +3,8 @@ package com.testdemo;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.daiyan.RNAlibcSdkPackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import it.innove.BleManagerPackage;
 import com.beefe.picker.PickerViewPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
@@ -26,6 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNAlibcSdkPackage(),
+            new RNDeviceInfo(),
             new BleManagerPackage(),
             new PickerViewPackage(),
             new RNGestureHandlerPackage()
